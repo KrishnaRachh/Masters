@@ -1,8 +1,3 @@
-
-###     5min--Renko ATR 14--Stoch RSI 14,14,3,3--StochRSI crossover above 20
-
-
-
 import numpy as np
 import pandas as pd
 from stocktrends import Renko
