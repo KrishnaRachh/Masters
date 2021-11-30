@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  6 19:34:07 2021
-
-@author: krkoo
-"""
 
 import yfinance as yf
 import numpy as np
