@@ -1,11 +1,8 @@
-# -*- coding: utf-8 -*-
 
-# import necessary libraries
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# Create lists to store scraped news urls, headlines and text
 url_list = []
 news_text = []
 headlines = [] 
@@ -34,12 +31,11 @@ for www in url_list:
         elif last_sentence.split(" ")[0]=="By":
             break
     
-    #prune non news related text from the scraped data to create the news text
+    
     joined_text = ' '.join(temp[temp.index("More Info")+1:temp.index(last_sentence)])
     news_text.append(joined_text)
 
-
-# save news text along with the news headline in a dataframe      
+     
 news_df = pd.DataFrame({ 'Headline': headlines,
                          'News': news_text,
                        })
@@ -47,7 +43,4 @@ news_df = pd.DataFrame({ 'Headline': headlines,
 # export the news data into a csv file
 news_df.to_csv("CrudeOil_News_Articles.csv",index=False)     
 
-#after the above step label data as pos,neg,neutral and then run the nb_train code
 
-
-#before running predict, we need new datset make following changes- line 13 (select new page numbers) & type in new filename with _test in it
