@@ -1,7 +1,5 @@
-#after the above step label data as pos,neg,neutral and then run the nb_train code to have Gaussian Naive Bayes output
+#after the above step label data as pos,neg,neutral and then run the nb_train code to have Gaussian Naive Bayes results
 
 #after trainging data using above codes- run nb_predict to predict any future news aticles to be pos/neg/neutral
 
 #run the crude_oil_news code again to get new news articles for testing and save by a new name _test 
-
-#before running predict, we need new datset make following changes- line 13 (select new page numbers) & type in new filename with _test in it
