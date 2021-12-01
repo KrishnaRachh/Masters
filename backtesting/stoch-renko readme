@@ -4,3 +4,5 @@ BUY signal ? -- more than 2 green renko candles && %K crossing above %D line
 SELL signal ? -- more than 2 red renko candles && %K crossing below %D line
 
 
+#Note:- 
+the strategy return graph for some stocks may start from different dates, since it depends on the time renko candles form.
