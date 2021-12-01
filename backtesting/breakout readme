@@ -1,1 +1,10 @@
 Breakout strategy:
+If (current high) > max of (past 20-periods' high) && if (current volume) > max of (past 20 periods' volume) -- BUY
+If buy condition is currently active: 
+          stop loss level if (current low) < prev close - 1* ATR
+          reverse position if (current low) <  min of (past 20-periods' low) && if (current volume) > max of (past 20 periods' volume)
+          
+If (current low) < min of (past 20-periods' low) && if (current volume) > max of (past 20 periods' volume) -- SELL
+If buy condition is currently active: 
+          stop loss level if (current high) > prev close + 1* ATR
+          reverse position if (current high) >  max of (past 20-periods' high) && if (current volume) > max of (past 20 periods' volume)
