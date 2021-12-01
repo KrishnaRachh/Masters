@@ -1,10 +1,6 @@
 Stochastics + Renko strategy risk-ret parameters
 5min--  Renko ATR 14 periods ; Stoch RSI 14,14,3,3 ; 
-Buy signal ? -- more than 2 green renko candles && %K crossing above %D line
+BUY signal ? -- more than 2 green renko candles && %K crossing above %D line
+SELL signal ? -- more than 2 red renko candles && %K crossing below %D line
 
 
-
-
-Portfolio CAGR =  0.2796788463273501
-Portfolio Sharpe ratio =  1.2748005287135067
-Portfolio Max DD =  0.03351506850393044
