@@ -1,12 +1,12 @@
 
 from sklearn.feature_extraction.text import CountVectorizer #does tokenizatoiin,stop words-all NLP stuff
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.naive_bayes import GaussianNB #Gaussian is used since we have 3 variables -pos,neg,neutral in our sentiment dataset. If you have 2 variables can use Multinomial
+from sklearn.naive_bayes import GaussianNB 
 import pandas as pd
 import pickle
 
 
-data = pd.read_csv(r"C:\Users\krkoo\OneDrive\Desktop\Udemy\Mayank Rasu lects\Section 10-Sentiment Analysis\CrudeOil_News_Articles.csv", encoding = "ISO-8859-1") 
+data = pd.read_csv(r".\CrudeOil_News_Articles.csv", encoding = "ISO-8859-1") 
 
 X = data.iloc[:,1] 
 
