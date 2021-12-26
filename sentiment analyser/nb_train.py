@@ -6,7 +6,7 @@ import pandas as pd
 import pickle
 
 
-data = pd.read_csv(r".\CrudeOil_News_Articles.csv", encoding = "ISO-8859-1") 
+data = pd.read_csv(".\CrudeOil_News_Articles.csv", encoding = "ISO-8859-1") 
 
 X = data.iloc[:,1] 
 
