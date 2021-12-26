@@ -10,7 +10,7 @@ vectorizer = pickle.load(open("vectorizer_crude_oil", 'rb'))
 #Predict sentiment using the trained classifier
 
 # Import test data set
-data_pred = pd.read_csv(r"C:\Users\krkoo\OneDrive\Desktop\Udemy\Mayank Rasu lects\Section 10-Sentiment Analysis\CrudeOil_News_Articles_test.csv", encoding = "ISO-8859-1")
+data_pred = pd.read_csv(".\CrudeOil_News_Articles_test.csv", encoding = "ISO-8859-1")
 X_test = data_pred.iloc[:,1].dropna() # extract column with news article
 X_vec_test = vectorizer.transform(X_test)
 X_vec_test = X_vec_test.todense()
